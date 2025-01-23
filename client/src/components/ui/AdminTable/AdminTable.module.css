@@ -1,0 +1,41 @@
+.tableContainer {
+  width: 100%;
+  margin-bottom: 16px;
+  max-height: 68vh; 
+  overflow-y: auto; 
+}
+
+.table {
+  min-width: 750px;
+}
+
+.tableRow {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .table {
+      min-width: auto;
+  }
+
+  .tableCell {
+      font-size: 0.8rem;
+      padding: 8px;
+  }
+
+  .tablePagination {
+      font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .table {
+      font-size: 0.7rem;
+      padding: 4px;
+  }
+
+  .tableCell {
+      font-size: 0.7rem;
+      padding: 6px;
+  }
+}

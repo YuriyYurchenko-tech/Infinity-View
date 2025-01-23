@@ -1,0 +1,122 @@
+.container {
+  width: 100%;
+  height: 400px;
+  padding: 80px 60px 0 120px;
+  background-color: #0e2536;
+  color: white;
+}
+
+.title {
+  margin-left: -10px;
+  font-size: 1.25rem;
+  margin-bottom: 50px;
+}
+
+.slider {
+  color: white;
+  height: 4px;
+}
+
+.sliderThumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.sliderRail,
+.sliderTrack {
+  height: 3px;
+}
+
+.typography2 {
+  margin-bottom: 6;
+  font-size: 30px;
+}
+
+.href {
+  text-decoration: none;
+  color: white;
+}
+.customSelect {
+  color: white;
+  width: 300px;
+  border: 1px solid white;
+}
+
+.customSelect .MuiOutlinedInput-notchedOutline {
+  border-color: white;
+}
+
+.customSelect:hover .MuiOutlinedInput-notchedOutline {
+  border-color: white;
+}
+
+.customSelect.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: white;
+}
+
+.selectControl {
+  width: 100%;
+  color: white;
+}
+
+.selectLabel {
+  color: white;
+}
+
+.selectOutline {
+  color: white;
+}
+
+.menuItem {
+  color: black;
+}
+
+.resetButton {
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.contactInfo {
+  margin-top: 5vh;
+
+}
+
+.phoneNumber {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 50px 90px 50px 40px;
+    background-color: #0e2536;
+    color: white;
+    min-width: 350px;
+    max-width: 100%;
+  }
+  .contactInfo {
+    font-size: 20px;
+    margin-top: 5vh;
+
+  }
+
+  .customSelect {
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 899px) {
+  .container {
+    background-color: #0e2536;
+  }
+  .customSelect {
+    width: 200px;
+  }
+  .contactInfo {
+    margin-top: 5vh;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,69 @@
+.card {
+  min-width: 250px;
+  cursor: pointer;
+  border: 1px solid #a28b6e;
+  box-shadow: none;
+}
+
+.cardContent {
+  font-size: 12px;
+}
+
+.square {
+  font-size: 25px;
+  color: #0e2536;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 105px;
+}
+
+.labelBox {
+  padding: 5px;
+}
+
+.imageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: contain;
+}
+
+.image {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.priceContainer {
+  font-size: 20px;
+}
+
+.pricePerMeter {
+  font-size: 12px;
+}
+
+.apartments_cards_alike {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.apartment_one_card_price {
+  background-color: #0e2536;
+  color: #a1978a;
+}
+
+@media (max-width: 1050px) {
+  .card {
+    height: 500px;
+  }
+  .image {
+    height: 300px;
+  }
+}

@@ -1,0 +1,54 @@
+.modalContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: var(--background-paper, #fff);
+    border: 2px solid #000;
+    box-shadow: 24px;
+    padding: 16px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .radioGroup {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .radioLabel {
+    margin-left: 10px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .deleteConfirmation {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+  }
+  
+  .button {
+    margin-top: 16px;
+    background-color: #0e2536;
+  }
+  
+  .buttonDelete {
+    background-color: #ce5c5c;
+}
+
+.buttonClose {
+    background-color: grey;
+    margin-top: 16px;
+  }
+  

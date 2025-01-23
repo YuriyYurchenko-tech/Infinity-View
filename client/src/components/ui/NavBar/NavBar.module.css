@@ -1,0 +1,237 @@
+/* NavBar.module.css */
+.navbar {
+    background-color: white;
+    color: black;
+    height: 100px;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbarContainer {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 120px;
+  }
+  
+  .navbarLogo {
+    margin-right: 2rem;
+    display: flex;
+    font-family: monospace;
+    font-weight: 500;
+    color: #0e2536;
+    text-decoration: none;
+    flex-direction: column;
+    font-size: 35px;
+  }
+
+  .navbarUnderLogo {
+    font-size: 14px;
+  }
+
+  .navbarLinkBox {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .navbarLink {
+    color: black;
+    font-size: 18px;
+  }
+  
+  .rightAligned {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contactIcon {
+    color: #0e2536;
+    margin-left: 14px;
+  }
+  
+  .contactIcon:hover {
+    color: #336891;
+  }
+  
+  .adminLinks {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
+  .buyButton {
+    color: white;
+    border-color: black;
+    text-transform: none;
+    background-color: #0e2536;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: transform 0.3s, backgroundColor 0.3s;
+  }
+  
+  .buyButton:hover {
+    border: 1px solid black;
+    background-color: #093a4d;
+    transform: scale(1.05);
+  }
+
+  .mobileLinks {
+    color: #0e2536;
+    text-decoration: none;
+  }
+
+
+
+  @media (max-width: 1600px) {
+    .navbarLink {
+      font-size: 16px;
+    }
+
+    .navbarLogo {
+      font-weight: 500;
+      font-size: 24px;
+    }
+
+    .navbarUnderLogo {
+      font-size: 10px;
+    }
+
+    .buyButton {
+      font-size: 14px;
+      padding: 5px 10px;
+      border-radius: 40px;
+      transition: transform 0.3s, backgroundColor 0.3s;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .navbarLink {
+      font-size: 12px;
+    }
+
+    .buyButton {
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 40px;
+      transition: transform 0.3s, backgroundColor 0.3s;
+    }
+
+    .contactIcon {
+      height: 30px;
+      margin-left: 6px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .navbar {
+      height: 70px;
+    }
+
+    .navbarLink {
+      font-size: 9px;
+    }
+
+    .navbarLogo {
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .navbarUnderLogo {
+      font-size: 8px;
+    }
+
+    .buyButton {
+      font-size: 9px;
+      padding: 6px 8px;
+      border-radius: 20px;
+      margin-left: 10px;
+    }
+
+    .contactIcon {
+      display: none;
+    }
+  }
+
+  @media (max-width: 899px) {
+    .navbarLink {
+      display: none;
+    }
+
+    .buyButton {
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 40px;
+      transition: transform 0.3s, backgroundColor 0.3s;
+    }
+
+    .contactIcon {
+      display: block;
+    }
+
+    .navbarLogo {
+      font-weight: 500;
+      font-size: 22px;
+    }
+
+    .navbarUnderLogo {
+      font-size: 10px;
+    }
+  }
+
+  @media (max-width: 767.5px) {
+    .navbarContainer {
+      padding: 0 40px;
+    }
+
+    .buyButton {
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 40px;
+    }
+
+    .contactIcon {
+      display: block;
+      height: 25px;
+      margin-left: 6px;
+    }
+
+    .navbarLogo {
+      font-weight: 500;
+      font-size: 22px;
+    }
+
+    .navbarUnderLogo {
+      font-size: 10px;
+    }
+  }
+
+  @media (min-width: 374px) and (max-width: 574.5px) {
+    .navbarContainer {
+      padding: 0 6px;
+    }
+
+    .buyButton {
+      font-size: 8px;
+      padding: 5px 5px;
+      border-radius: 40px;
+      margin-right: 6px;
+    }
+
+    .contactIcon {
+      display: block;
+      height: 22px;
+      margin-left: 0;
+    }
+
+    .navbarLogo {
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    .navbarUnderLogo {
+      font-size: 8px;
+    }
+  }
+  

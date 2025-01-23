@@ -1,0 +1,124 @@
+.carouselFadeIn {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+}
+
+.openFilter {
+  display: none;
+}
+.apartmentsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  animation: fadeIn 1s ease-in-out;
+  height: auto;
+}
+
+.apartmentsCards {
+  text-align: left;
+  margin: 20px 0;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 60px auto 80px 140px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.filterContainer {
+  display: block;
+}
+.fullHeight {
+  height: 100vh;
+}
+
+.autoHeight {
+  height: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1600px) {
+  .apartments_cards {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1500px) {
+  .container {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+  .apartments_cards {
+    justify-content: space-evenly;
+  }
+  .modalStyle {
+    position: absolute;
+    width: 320px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    background-color: white;
+    border: 2px solid #000;
+    box-shadow: 24;
+    padding: 40px;
+  }
+
+  .container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 899px) {
+  .filterContainer {
+    display: block;
+    height: 100%;
+  }
+
+  .commercyFilter {
+    display: block;
+    width: 100%;
+  }
+  .modalStyle {
+    position: absolute;
+    width: 320px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%; 
+    background-color: white; 
+    border: 2px solid #000;
+    box-shadow: 24;
+    padding: 40px;
+  }
+  .apartmentsContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .apartments_cards {
+    margin-top: 50px;
+  }
+}

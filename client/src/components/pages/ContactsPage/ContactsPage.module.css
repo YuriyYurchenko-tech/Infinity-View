@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-in-out; 
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .leftPanel {
+    flex: 4;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  
+  .carousel {
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out; 
+    min-height: 250px;
+  }
+  
+  .carouselItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .carouselImage {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  .contactDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-top: 10px;
+  }
+  
+  .iconContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 110px;
+  }
+  
+  .icon {
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  .phone {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+  }
+  
+  .phoneLink {
+    margin-bottom: 40px;
+  }
+  
+  .divider {
+    border-top: 1px solid #000;
+    width: 70%;
+    margin-bottom: 50px;
+  }
+  
+  .hours, .address, .email {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    position: relative;
+    background-color: transparent;
+    color: black;
+    border: 1px solid #0e2536;
+    padding: 10px 40px;
+    overflow: hidden;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-weight: normal;
+    width: 300px;
+    border-radius: 0;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-bottom: 40px;
+    border-radius: 40px;
+  }
+  
+  .button:hover {
+    background-color: #0e2536;
+    color: white;
+  }
+  
+  .mapContainer {
+    flex: 6;
+  }
+  
+  .carousel-fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+   
+     .map {
+      height: 500px;
+     }
+
+     .container {
+      height: 100%;
+     }
+  }
+
+  

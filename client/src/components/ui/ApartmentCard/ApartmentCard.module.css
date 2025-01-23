@@ -1,0 +1,247 @@
+.card {
+    min-width: 350px;
+    cursor: pointer;
+    border: 1px solid #a28b6e;
+    box-shadow: none;
+    margin: 40px 25px 10px 25px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+     box-shadow: 1px 0px 5px 2px rgba(146, 128, 84, 0.42);
+}
+
+.mobile_card {
+    display: none;
+}
+
+.cardContent {
+    font-size: 14px;
+}
+
+.square {
+    font-size: 45px;
+    padding: 10px;
+    color: #0e2536;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 105px;
+    margin-top: 15px;
+}
+
+.labelBox {
+    padding: 10px;
+}
+
+.imageBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+}
+
+.image {
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.priceContainer {
+    padding: 10px;
+}
+
+.price {
+    font-size: 30px;
+}
+
+.pricePerMeter {
+    font-size: 14px;
+}
+
+.apartment_one_card_price {
+    background-color: #0e2536;
+    color: #a1978a;
+}
+
+@media (max-width: 1900px) {
+    .card {
+        min-width: 250px;
+        margin-right: 10px;
+    }
+
+    .image {
+        height: 320px;
+        width: 320px;
+        padding: 20px;
+        margin: 0;
+    }
+  }
+  
+  @media (max-width: 1500px) {
+    .card {
+        min-width: 300px;
+        max-width: 300px;
+        margin: 10px 10px 10px 0;
+    }
+
+    .image {
+        height: 300px;
+        width: 300px;
+        padding: 20px;
+        margin: 0;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .square {
+        font-size: 34px;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .card {
+        min-width: 260px;
+        max-width: 260px;
+    }
+
+    .image {
+        height: 250px;
+        width: 250px;
+        padding: 20px;
+        margin: 0;
+    }
+  }
+
+  @media (max-width: 899px) {
+    .card {
+        display: none;
+    }
+    .mobile_card {
+        display: flex;
+        flex-direction: row;
+        width: 650px;
+        cursor: pointer;
+        border: 1px solid #a28b6e;
+        box-shadow: none;
+        margin: 20px auto;
+        justify-content: space-between;
+      }
+    
+      .mobile_cardContent {
+        background-color: #0e2536;
+        color: #a1978a;
+        padding: 10px 15px; 
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px; 
+        width: 300px;
+      }
+    
+      .mobile_square {
+        color: #a1978a;
+        font-size: 32px;
+        padding: 8px 0;
+        text-align: center;
+        font-weight: bold;
+      }
+    
+      .priceContainer {
+        padding: 10px 15px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px; 
+      }
+    
+      .mobile_price {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    
+      .mobile_imageBox {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0; 
+      }
+    
+      .mobile_image {
+        height: 250px;
+        width: 250px;
+        object-fit: contain; 
+        margin-left: 40px;
+      }
+  }
+
+  @media (max-width: 767.5px) {
+    .mobile_image {
+        margin-left: 30px;
+      }
+  }
+
+  @media (max-width: 665px) {
+    .mobile_card {
+        width: 550px;
+      }
+  }
+
+  @media (max-width: 600px) {
+    .mobile_image {
+        margin-left: 10px;
+      }
+  }
+
+  @media (max-width: 574.5px) {
+    .mobile_card {
+        display: none;
+    }
+
+    .card {
+        display: block;
+        min-width: 300px;
+        max-width: 300px;
+        margin: 10px 0 20px 0;
+        max-height: 400px;
+    }
+
+    .cardContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25px;
+    }
+
+    .square {
+        padding: 0;
+    }
+
+    .infoContainer {
+        width: 120px; 
+    }
+
+    .image {
+        padding: 10px 0;
+        height: 220px;
+        width: 220px;
+    }
+
+    .apartment_one_card_price {
+        padding: 10px 0 0 0;
+    }
+
+    .price {
+        font-weight: 500;
+    }
+
+    .apartment_one_card_price {
+        background-color: #0e2536;
+    }
+  }

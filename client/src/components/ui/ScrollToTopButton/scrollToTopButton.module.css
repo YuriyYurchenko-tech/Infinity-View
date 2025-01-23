@@ -1,0 +1,16 @@
+.scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: rgba(14, 37, 54, 0.7);
+}
+
+.scrollToTopButton:hover {
+    background-color: rgba(14, 37, 54, 0.9);
+}
+
+.arrowUpIcon {
+    height: 40px;
+    width: 40px;
+}

@@ -1,0 +1,109 @@
+.similarApartmentsContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0e2536;
+}
+
+  .similarAnimation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out; 
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .similarTitle {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 36px;
+  }
+  
+  .carouselContainer {
+    padding: 20px;
+    position: relative;
+    width: 1355px;
+  }
+  
+  .iconButtonLeft {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    color: #a1978a;
+  }
+  
+  .iconButtonRight {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    color: #a1978a;
+  }
+  
+  .scrollWrapper {
+    display: flex;
+    overflow-x: scroll;
+    gap: 16px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+  }
+  
+  .scrollWrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (max-width: 1450px) {
+    .carouselContainer {
+      padding: 10px;
+      width: 1155px;
+    }
+  }
+  @media (max-width: 1250px) {
+    .carouselContainer {
+      padding: 0;
+      width: 955px;
+    }
+  }
+  @media (max-width: 1050px) {
+    .carouselContainer {
+      padding: 0;
+      width: 755px;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .similarApartmentsContainer {
+    height: 600px;
+  }
+    .carouselContainer {
+      padding: 0;
+      width: 555px;
+    }
+  }
+  @media (max-width: 650px) {
+    .carouselContainer {
+      padding: 0;
+      width: 355px;
+    }
+    .similarTitle {
+      margin-top: 26px;
+    }
+  }
+  @media (max-width: 450px) {
+    .carouselContainer {
+      padding: 0;
+      width: 255px;
+    }
+    .similarTitle {
+      font-size: 18px;
+      margin-top: 0;
+    }
+  }

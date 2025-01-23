@@ -1,0 +1,542 @@
+.carousel {
+  position: relative;
+  height: 1000px; 
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out; 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.carouselBackground {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  background-image: url(https://sun9-74.userapi.com/s/v1/ig2/_eH6wNRHZ_MjuOF3W0TNm3akawmGXW14fBiZoi4HH-cE4N6AEm0u59r2XOFaGHYRmprPFZSvCo75T9uzXacNt1WJ.jpg?quality=95&as=32x16,48x24,72x36,108x55,160x81,240x121,360x182,480x243,540x273,640x324,720x364,1080x547,1280x648,1440x729,2560x1296&from=bu&u=HsIze4QDaTYT_iWUDztLqVCzDLTOj0sxzcC5JnNNpIU&cs=2560x1296);
+}
+
+.carouselOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.centeredText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  margin-bottom: 16px;
+}
+
+.scrollContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+.arrowIcon {
+  color: #fff;
+  font-size: 50px;
+  animation: bounce 3s infinite;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.learnMoreButton {
+  background: transparent;
+  color: #fff;
+  text-transform: none;
+  font-size: 16px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40%, 60% {
+    transform: translateY(-8px);
+  }
+}
+
+.infoContainer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  margin-top: 80px;
+}
+
+.infoSection, .infoSecondSection {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 24px; 
+}
+
+.infoTextTitle {
+  text-align: left;
+}
+
+.infoText, .infoTextSecond {
+  max-width: 600px;
+  text-align: justify;
+}
+
+.infoText {
+  margin-right: 70px;
+}
+
+.infoTextSecond {
+  margin-left: 70px;
+}
+
+.descriptionText {
+  margin-top: 40px;
+}
+
+.buttonSection {
+  padding: 80px 0 80px 0;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.primaryButton, .outlinedButton {
+  padding: 12px 32px;
+  font-size: 22px;
+  border-radius: 50px;
+  width: 400px;
+  height: 90px;
+}
+
+.primaryButton {
+  background-color: #0e2536;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.primaryButton:hover {
+  background-color: #093a4d;
+  transform: scale(1.05);
+}
+
+.outlinedButton {
+  border: 2px solid #0e2536;
+  color: #093a4d;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.outlinedButton:hover {
+  background-color: #e6f3f7;
+  transform: scale(1.05);
+}
+
+.feedbackForm {
+  padding: 40px;
+  background-color: #ffffff;
+  max-width: 1200px;
+  width: 100%;
+  margin: 40px auto;
+  border: 0.5px solid black;
+  border-radius: 20px;
+}
+
+.formGrid {
+  display: flex;
+  gap: 200px;
+  justify-content: space-around;
+}
+
+.formText {
+  text-align: justify;
+}
+
+.formTitle {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.formDescription {
+  font-size: 20px;
+  color: #666;
+}
+
+.formFields {
+  text-align: center;
+}
+
+.submitButton {
+  background-color: #093a4d;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.submitButton:hover {
+  background-color: #0e2536;
+}
+
+.carouselWrapper {
+  width: 100%;
+  max-width: 1200px; 
+  height: 675px; 
+  overflow: hidden;
+  margin: 0 auto; 
+}
+
+.carouselInner {
+  width: 100%;
+  height: 800px;
+}
+
+.carouselImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+  height: 675px;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 675px;
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+.iconLink {
+  color: #093a4d;
+  margin: 0 5px;
+  font-size: 1.8rem;
+}
+
+.iconLink:hover {
+  color: #0e2536;
+}
+
+.imageWrapper {
+  height: 675px;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+}
+
+.cardMedia {
+  border-radius: 10px;
+  height: 675px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 32px;
+  margin-top: 70px;
+}
+
+.feedbackForm {
+  padding: 40px;
+  max-width: 1400px;
+  width: 100%;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: none;
+}
+
+.formGrid {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+.formGridRow {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  max-width: 500px;
+}
+
+.leftSideText {
+  padding-right: 80px;
+}
+
+.formTitle {
+  margin-bottom: 16px;
+}
+
+.formDescription {
+  margin-bottom: 8px;
+  margin-right: 40px;
+}
+
+.iconLink {
+  color: #0e2536;
+  transition: color 0.3s;
+}
+
+.iconLink:hover {
+  color: #336891;
+}
+
+.rightSideForm {
+  text-align: center;
+}
+
+.submitButton {
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  background-color: #0e2536;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.imgForm {
+  height: 260px;
+  margin-left: 30px; 
+  opacity: 0.8;
+}
+
+
+@media (min-width: 2000px) {
+  .infoContainer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 200px;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .infoText, .infoTextSecond {
+    max-width: 450px;
+  }
+
+  .infoTextTitle {
+    font-size: 35px;;
+  }
+  
+  .descriptionText {
+    font-size: 18px;
+  }
+
+  .formContainer {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .carousel {
+    height: 760px; 
+  }
+
+  .infoSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infoSecondSection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .infoText, .infoTextSecond {
+    max-width: 1050px;
+    margin: 0;
+  }
+
+  .carouselImage {
+    height: 475px;
+  }
+
+  .cardMedia {
+    height: 475px;
+  }
+
+  .primaryButton, .outlinedButton {
+    padding: 8px 26px;
+    font-size: 16px;
+    border-radius: 50px;
+    width: 300px;
+    height: 70px;
+  }
+
+  .buttonSection {
+    padding: 40px 0 120px 0;
+  }
+
+  .formContainer {
+    margin-top: 0;
+  }
+
+  .imgForm {
+    height: 140px;
+    margin-left: 0; 
+    opacity: 0.8;
+  }
+
+  .leftSideText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 899px) {
+  .infoTextTitle {
+    font-size: 35px;;
+  }
+  
+  .descriptionText {
+    font-size: 18px;
+  }
+
+  .feedbackForm {
+    max-width: 500px;
+  }
+
+  .formGrid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .leftSideText, .formDescription {
+    margin: 0;
+    padding: 0 0 20px 0;
+  }
+
+  .imgForm {
+    display: none;
+  }
+
+  .leftSideText {
+    align-items: center;
+  }
+}
+
+@media (max-width: 767.5px) {
+  .imageWrapper {
+    height: 400px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cardMedia {
+    border-radius: 10px;
+    height: 375px;
+  }
+
+  .carouselWrapper {
+    height: 400px; 
+  }
+  
+  .carouselImageWrapper {
+    height: 375px;
+  }
+  
+  .carouselImage {
+    height: 375px;
+  }
+
+  .buttonSection {
+    padding: 100px 0 100px 0;
+  }
+
+  .primaryButton, .outlinedButton {
+    padding: 8px 10px;
+    font-size: 13px;
+    border-radius: 50px;
+    width: 210px;
+    height: 50px;
+  }
+
+  .formTitle {
+    font-size: 28px;
+  }
+
+  .formDescription {
+    font-size: 16px;
+  }
+
+  .infoTextTitle {
+    font-size: 24px;
+  }
+
+  .descriptionText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 574.5px) {
+  .feedbackForm {
+    max-width: 400px;
+  }
+
+  .carousel {
+    height: 700px; 
+  }
+
+  .title {
+    font-size: 80px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .scrollContainer {
+    margin-top: 100px;
+  }
+
+  .centeredText {
+    margin-top: 0;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primaryButton {
+    margin-bottom: 30px;
+  }
+
+  .buttonSection {
+    padding: 50px 0 80px 0;
+  }
+
+  .submitButton {
+    width: 200px;
+  }
+}
